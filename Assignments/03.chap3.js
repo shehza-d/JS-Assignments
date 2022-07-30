@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="../Shehzad-logo.png" />
-	<title>Chp 3</title>
-</head>
-<body>
-	<script>
-		let myAge = 19;
+let myAge = 19;
 		alert("I am " + myAge + " years old.");
 
 		let timesVisited = 14;
@@ -26,17 +15,3 @@
 		document.write(personName + " ordered " + personQuantity + " " + personProduct + " on this Clothing Store.");
 		document.write(`${personName} ordered ${personQuantity} ${personProducton} this Clothing Store.`);
 	
-
-
-
-
-
-	</script>
-
-
-
-
-
-
-</body>
-</html>
