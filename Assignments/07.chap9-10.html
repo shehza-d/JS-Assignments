@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="../Shehzad-logo.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
 	<title>chap 9 to 10</title>
 	<style>
 		#traffic_div {
@@ -80,12 +80,15 @@
 		Marks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain
 		Marks</p>
 	<form onsubmit="question6(); return false">
-		<label>Subject 1 </label> <input type="number" value="0" id="t1" min="1">&nbsp;&nbsp;<input type="number"
-			value="0" id="o1" min="0"> <br>
-		<label>Subject 2 </label> <input type="number" value="0" id="t2" min="1">&nbsp;&nbsp;<input type="number"
-			value="0" id="o2" min="0"> <br>
-		<label>Subject 3 </label> <input type="number" value="0" id="t3" min="1">&nbsp;&nbsp;<input type="number"
-			value="0" id="o3" min="0"> <br>
+		<label>Subject 1 </label>
+		<input type="number" value="100" id="t1" min="1">&nbsp;&nbsp;
+		<input type="number" value="0" id="o1" min="0"> <br>
+		<label>Subject 2 </label>
+		<input type="number" value="100" id="t2" min="1">&nbsp;&nbsp;
+		<input type="number" value="0" id="o2" min="0"> <br>
+		<label>Subject 3 </label>
+		<input type="number" value="100" id="t3" min="1">&nbsp;&nbsp;
+		<input type="number" value="0" id="o3" min="0"> <br>
 		<button type="submit">Calculate</button>
 	</form>
 	<div id="total_markss"></div>
@@ -100,14 +103,19 @@
 	<div id="guess_number_result"></div>
 	<div id="sevenB"></div>
 	<div id="eight"></div>
-	<div id="nine-odd-even"></div>
+	<div id="nine-odd-even"></div><br><br>
+
+	<h2>Question 8</h2>
+	<input type="number" id="temp">
+	<button onclick="question10()">Check</button>
 
 
-<script src="./07.chap9-10.js"></script>
+	<script src="./07.chap9-10.js"></script>
 
 </body>
+
 </html>
-// <!-- let tempreature = prompt("Enter the tempreature");
+<!-- let tempreature = prompt("Enter the tempreature");
 // 			if (tempreature < 0) {
 // 				alert("minus ma kon tempreature daalwata hy");
 // 			}

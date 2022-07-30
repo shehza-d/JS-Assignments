@@ -123,7 +123,10 @@ function question6() {
 	let o03 = Number(document.querySelector("#o3").value);
 	let total_marks = t01 + t02 + t03;
 	let obtain_marks = o01 + o02 + o03;
-	if (total_marks < obtain_marks) { alert("obtain marks can't be greater than total marks") }
+	document.querySelector("#total_markss").innerHTML = `Your total marks are ${total_marks}`;
+	document.querySelector("#obtain_markss").innerHTML = `Your obtained marks are ${obtain_marks}`;
+
+	if (total_marks < obtain_marks)  {alert("obtain marks can't be greater than total marks"); return}
 	else {
 		let oPercentage = (obtain_marks / total_marks) * 100;
 		document.querySelector("#percentage").innerHTML = `Your percentage is ${oPercentage}%`;
@@ -143,7 +146,7 @@ function question6() {
 		}
 	}
 }
-
+//question 7,8 and 9
 let question7 = () => {
 	const random_number = Math.floor(Math.random() * 10);
 	let guess_number0 = Number(document.querySelector("#guess_number").value);
@@ -153,18 +156,36 @@ let question7 = () => {
 	} else {
 		document.querySelector("#guess_number_result").innerText = `Sorry! You guessed the wrong number`;
 	}
-	// if(guess_number0){}
 	if (guess_number0 % 3 === 0) {
 		document.querySelector("#eight").innerText = `${guess_number0} is divisible by 3`;
 	} else {
 		document.querySelector("#eight").innerText = `${guess_number0} is not divisible by 3`;
 	}
-	if (guess_number0 % 2 == 0) {
+	if (guess_number0 % 2 == 0) {//checking odd or even number
 		document.querySelector("#nine-odd-even").innerText = `${guess_number0} is Even number`;
 	} else {
 		document.querySelector("#nine-odd-even").innerText = `${guess_number0} is Odd number`;
 	}
+}
+//question 10
+const question10=()=>{
+    const temp = document.querySelector('#temp').value;
+	switch(temp){
+		case (temp>40):
+			console.log(`40`);
+			break;
+		case (temp>30):
+			console.log(`30`)
+			break;
+		case (temp>20):
+			console.log(`20`)
+		default:
+			console.log(`Error`)
+			break;
+			
+			
+			
 
-
-
+		
+	}
 }
